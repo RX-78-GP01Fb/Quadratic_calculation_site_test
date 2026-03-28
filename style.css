@@ -1,12 +1,12 @@
 body {
-    font-family: sans-serif;
-    background: whitesmoke;
+  font-family: sans-serif;
+  background: whitesmoke;
 }
 
 h1 {
-    font-size: 30px;
-    color: blueviolet;
-    text-align: center;
+  font-size: 30px;
+  color: blueviolet;
+  text-align: center;
 }
 
 input[type=number] {
@@ -15,22 +15,24 @@ input[type=number] {
 }
 
 input[type="button"] {
-    border: 0;
-    background: whitesmoke;
-    display: block;
-    margin: 20px auto;
-    border: 5px solid rebeccapurple;
-    padding: 15px 10px;
-    width: 200px;
-    outline: none;
-    color: blueviolet;
-    border-radius: 25px;
-    transition: 0.25s;
-    text-align: center;
-    cursor: pointer;
+  border: 0;
+  background: whitesmoke;
+  display: block;
+  margin: 20px auto;
+  border: 5px solid rebeccapurple;
+  padding: 15px 10px;
+  width: 200px;
+  outline: none;
+  color: blueviolet;
+  border-radius: 25px;
+  transition: 0.25s;
+  text-align: center;
+  cursor: pointer;
 }
 
-    #splash {
+/* ↓ここから別に書く（重要） */
+
+#splash {
   position: fixed;
   top: 0;
   left: 0;
@@ -73,8 +75,4 @@ input[type="button"] {
     opacity: 0;
     visibility: hidden;
   }
-}
-    visibility: hidden;
-  }
-}
 }
