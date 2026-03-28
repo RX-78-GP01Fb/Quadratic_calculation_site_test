@@ -85,37 +85,36 @@
   }
   </script>
   <script>
-const lines = [
-  "HOS Boot Sequence Start...",
-  "Checking System...",
-  "Memory OK",
-  "CPU OK",
-  "Loading Modules...",
-  "Sensor System ONLINE",
-  "Pilot Authentication...",
-  "ACCESS GRANTED",
-  "Launching..."
-];
+window.onload = () => {
+  const lines = [
+    "HOS Boot Sequence Start...",
+    "Checking System...",
+    "Memory OK",
+    "CPU OK",
+    "Loading Modules...",
+    "Sensor System ONLINE",
+    "Pilot Authentication...",
+    "ACCESS GRANTED",
+    "Launching..."
+  ];
 
-const bootText = document.getElementById("bootText");
+  const bootText = document.getElementById("bootText");
+  let i = 0;
 
-let i = 0;
-
-function typeLine() {
-  if (i < lines.length) {
-    bootText.innerHTML += lines[i] + "\n";
-    i++;
-    setTimeout(typeLine, 200);
-  } else {
-    setTimeout(() => {
-      document.getElementById("splash").classList.add("fade-out");
-    }, 800);
+  function typeLine() {
+    if (i < lines.length) {
+      bootText.innerHTML += lines[i] + "\n";
+      i++;
+      setTimeout(typeLine, 200);
+    } else {
+      setTimeout(() => {
+        document.getElementById("splash").classList.add("fade-out");
+      }, 800);
+    }
   }
-}
 
-window.addEventListener("load", () => {
   typeLine();
-});
+};
 </script>
 </body>
 
