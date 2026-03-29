@@ -1,6 +1,6 @@
 {
-  "name": "二次方程式計算サイト",
-  "short_name": "二次方程式",
+  "name": "二次方程式計算サイト（テスト）",
+  "short_name": "二次方程式（テスト）",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
